@@ -1,20 +1,19 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Al-Quds Travel Limited",
-  description:
-    "Air ticketing, hotels, Uganda tours, Hajj and Umrah travel services.",
+  description: "Your trusted travel partner in Uganda",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>
+
         <header>
           <h1>Al-Quds Travel Limited</h1>
           <p>Your trusted travel partner in Uganda</p>
@@ -32,9 +31,20 @@ export default function RootLayout({
 
         {children}
 
+        <a
+          href="https://wa.me/256702423393?text=Hello%20Al-Quds%20Travel%20Limited"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="floating-whatsapp"
+          aria-label="Chat with Al-Quds Travel on WhatsApp"
+        >
+          💬
+        </a>
+
         <footer>
           <p>© 2026 Al-Quds Travel Limited</p>
         </footer>
+
       </body>
     </html>
   );
