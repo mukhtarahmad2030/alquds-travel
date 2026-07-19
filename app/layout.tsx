@@ -38,7 +38,7 @@ export default function RootLayout({
           className="floating-whatsapp"
           aria-label="Chat with Al-Quds Travel on WhatsApp"
         >
-          💬
+          WhatsApp
         </a>
 
         <footer>
